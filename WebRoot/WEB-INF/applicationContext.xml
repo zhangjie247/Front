@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://192.168.0.121:3306/madoop</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>123456</value>
+		</property>
+	</bean>
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>edu/cssc/customer/service/Customer.hbm.xml</value>
+				<value>edu/cssc/dm/service/DMTask.hbm.xml</value>
+				<value>edu/cssc/dm/service/BaseDMParam.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<!-- 用户管理 -->
+	<bean id="customerDao" class="edu.cssc.customer.service.CustomerDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>	
+	<bean id="customerService" class="edu.cssc.customer.service.CustomerServiceImpl">
+		<property name="customerDao" ref="customerDao"></property>
+	</bean>	
+	<bean id="customerManager" class="edu.cssc.customer.CustomerManager" scope="prototype">
+		<property name="customerService" ref="customerService"></property>
+	</bean>	
+	<bean id="logoutAction" class="edu.cssc.customer.LogoutAction"></bean>	
+	<bean id="loginInterceptor" class="edu.cssc.customer.LoginInterceptor">
+		<property name="customerService" ref="customerService"></property>
+	</bean>
+	
+	<!-- 数据挖掘参数和任务提交,任务管理 -->
+	<bean id="DMTaskDao" class="edu.cssc.dm.service.DMTaskDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>	
+	<bean id="DMTaskService" class="edu.cssc.dm.service.DMTaskServiceImpl">
+		<property name="DMTaskDao" ref="DMTaskDao"></property>
+	</bean>	
+	<bean id="addTask" class="edu.cssc.task.AddTask"></bean>
+	<bean id="addDMTask" class="edu.cssc.dm.AddDMTask" scope="prototype"></bean>	
+	<bean id="submitDMTask" class="edu.cssc.dm.SubmitDMTask">
+		<property name="DMTaskService" ref="DMTaskService"></property>
+	</bean>
+	<bean id="DMTaskManager" class="edu.cssc.dm.DMTaskManager">
+		<property name="DMTaskService" ref="DMTaskService"></property>
+	</bean>
+	
+	<!-- 文件管理 -->
+	<bean id="fexplorer" class="edu.cssc.data.Fexplorer"></bean>
+	<bean id="ajaxAction" class="edu.cssc.data.AjaxAction"></bean>
+	<bean id="fileread" class="edu.cssc.data.readFile"></bean>
+	
+</beans>

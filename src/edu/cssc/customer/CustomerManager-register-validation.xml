@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+	"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<validator type="requiredstring">
+		<param name="fieldName">customer.userName</param>
+		<param name="trim">true</param>
+		<message>必须输入用户名</message>
+	</validator>
+	<validator type="regex">
+		<param name="fieldName">customer.userName</param>
+		<param name="expression"><![CDATA[(\w{6,20})]]></param>
+		<message>用户名长度为6-20</message>
+	</validator>
+	<validator type="requiredstring">
+		<param name="fieldName">customer.password</param>
+		<param name="trim">true</param>
+		<message>必须输入密码</message>
+	</validator>
+		<validator type="regex">
+		<param name="fieldName">customer.password</param>
+		<param name="expression"><![CDATA[(\w{6,20})]]></param>
+		<message>密码长度为6-20</message>
+	</validator>
+		<validator type="requiredstring">
+		<param name="fieldName">confirmPassword</param>
+		<param name="trim">true</param>
+		<message>必须输入确认密码</message>
+	</validator>
+		<validator type="regex">
+		<param name="fieldName">confirmPassword</param>
+		<param name="expression"><![CDATA[(confirmPassword==customer.password]]></param>
+		<message>密码必须一致</message>
+	</validator>
+	<validator type="int">
+		<param name="fieldName">customer.age</param>
+		<param name="min">1</param>
+		<param name="max">120</param>
+		<message>年龄必须在${min}~${max}之间</message>
+	</validator>
+	<validator type="email">
+		<param name="fieldName">customer.email</param>
+		<message>请输入有效的电子邮箱地址</message>
+	</validator>
+</validators>

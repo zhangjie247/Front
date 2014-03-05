@@ -1,0 +1,15 @@
+.onShow {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 25px; WIDTH: 250px; FLOAT: left; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}
+.onFocus {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 25px; WIDTH: 250px; BACKGROUND: url(../images/onFocus.gif) no-repeat; FLOAT: left; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}
+.onError {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 25px; WIDTH: 250px; BACKGROUND: url(../images/onError.gif) #ff9b9b no-repeat; FLOAT: left; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}
+.onCorrect {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 25px; WIDTH: 250px; BACKGROUND: url(../images/onCorrect.gif) no-repeat; FLOAT: left; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}
+.onLoad {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 25px; WIDTH: 250px; BACKGROUND: url(../images/onLoad.gif) no-repeat 3px 3px; FLOAT: left; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}

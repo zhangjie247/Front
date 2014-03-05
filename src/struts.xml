@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="/home/hadoop/data/fileupload" />
+	<constant name="struts.multipart.handler" value="monitoredJakarta" />
+	<constant name="struts.multipart.maxSize" value="2000000000" />
+	
+	<bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+		name="monitoredJakarta" class="com.davidjc.ajaxfileupload.multipart.MonitoredMultiPartRequest"
+		scope="default" optional="true" />
+		
+	<package name="customer" extends="struts-default">
+		<action name="login" class="customerManager" method="login">
+			<result name="input">/login.jsp</result>
+			<result name="success" type="redirect">showMsg.action</result>
+			<result name="error">/login.jsp</result>
+		</action>
+	</package>
+	
+	<package name="front" extends="struts-default">
+		<interceptors>
+			<interceptor name="loginInterceptor" class="edu.cssc.customer.LoginInterceptor"></interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="loginInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		<global-results>  
+            <result name="login" type="redirect">/login.jsp</result>  
+        </global-results> 
+		
+		<!-- 用户登陆和管理 -->
+		<action name="customerManager" class="customerManager">
+			<result name="success">/user/usercount.jsp</result>
+			<result name="register_success">/login.jsp</result>
+			<result name="register">/register.jsp</result>
+		</action>
+		<action name="loginIn" class="customerManager" method="loginIn">
+			<result name="success" type="redirect">showMsg.action</result>
+		</action>
+		<action name="logout" class="logoutAction">
+			<result name="success">/login.jsp</result>
+		</action>
+		<action name="modifyPassword" class="customerManager" method="modifyPassword">
+			<result name="input">/user/modifyUserFailed.jsp</result>
+			<result name="success">/user/modifyUserSuccess.jsp</result>
+			<result name="error">/user/modifyUserFailed.jsp</result>
+		</action>
+		<action name="showMsg" class="customerManager" method="showMsg">
+			<result name="success">/datamining/showmsg.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+
+		<!-- 任务及参数配置提交 -->
+	    <action name="DMTaskManager" class="DMTaskManager">
+			<result name="list">/task/tasklist.jsp</result>
+			<result name="detail">/task/taskdetail.jsp</result>
+			<result name="result" type="redirect">fileread.action</result>
+			<result name="download" type="stream">
+				<param name="contentType">text/plain</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="result.txt"</param>
+                <param name="bufferSize">1048576</param>
+			</result>
+			<result name="error">/task/taskerr.jsp</result>			
+			<result type="redirect">taskManager!list.action</result>
+		</action>
+		
+		<action name="addTask" class="addTask" method="addTask">
+			<result name="dmTask" type="redirect">addDMTask.action</result>
+			<result name="error">/datamining/addtask.jsp</result>
+		</action>
+
+		<action name="addDMTask" class="addDMTask" method="addDMTask">
+			<result name="success">/datamining/addtask.jsp</result>
+		</action>
+		<action name="processDMParam" class="addDMTask" method="processDMParam">
+			<result name="input">/datamining/addtask.jsp</result>
+			<result name="success">/datamining/taskconfirm.jsp</result>
+			<result name="error">/datamining/addtask.jsp</result>
+		</action>
+		<action name="taskSubmit" class="submitDMTask" method="taskSubmit">
+			<result name="success" type="redirect">DMTaskManager!list.action?username=%{username}</result>
+			<result name="error" type="redirect">addTask.action</result>
+		</action>
+
+		<!-- 文件操作-->
+		<action name="fexplorer" class="fexplorer">
+			<result name="success">/file/fexplorer.jsp</result>
+			<result name="error">/file/contentFail.jsp</result>
+		</action>
+		<action name="ajaxAction" class="ajaxAction"></action>
+		<action name="fileread" class="fileread" method="readOutputFile">
+			<result name="success">/file/resultContent.jsp</result>
+			<result name="error">/file/contentFail.jsp</result>
+		</action>
+		<action name="upsinglefile">
+			<result>/file/UpSingleFile.jsp</result>
+		</action>
+		<action name="fileUpload" class="edu.cssc.data.FileUploadAction" 
+			method="fileUpload">
+			<result >/file/fileupload.jsp</result>
+		</action>
+		<action name="processController" class="edu.cssc.data.FileUploadAction" 
+			method="processController">
+		</action>
+		
+	</package>
+
+</struts>    

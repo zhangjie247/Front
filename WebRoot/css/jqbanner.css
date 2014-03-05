@@ -1,0 +1,71 @@
+
+#jqb_object img{ 
+	border: none;
+}
+
+#jqb_object { 
+	position:relative;
+	width:980px; height:380px; 
+	overflow:hidden;
+}
+
+
+#jqb_object .jqb_bar{
+	position:absolute;
+	width:55px; height: 17px;
+	right:20px;
+	bottom:10px;
+	background:#000000;
+	opacity:0.7;
+	filter:alpha(opacity=50);
+	
+	padding-right:1px;
+	padding-top:1px;
+	padding-bottom:1px;
+	color: #ffffff;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: -1px;
+	border:solid 1px #eeeeee;
+	z-index:99;
+}
+
+#jqb_object .jqb_slide{
+	position:absolute;
+	width:980px; height:380px; 
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: -1px;
+	text-align: left;
+}
+
+#jqb_object .jqb_info{
+	position:absolute;
+	padding: 2px 10px 2px 10px;
+	float: left;
+}
+
+#jqb_object .jqb_btn{
+	width: 15px; height: 15px;
+	margin:1px 1px 1px 1px;
+	float: right;
+	cursor:pointer;
+	border:0px;
+}
+#jqb_object .jqb_btn_next{
+	background-image:url(../images/btn_next.gif);
+}
+#jqb_object .jqb_btn_prev{
+	background-image:url(../images/btn_prev.gif);
+}
+#jqb_object .jqb_btn_pause{
+	background-image:url(../images/btn_stop.gif);
+}
+#jqb_object .jqb_btn_play{
+	background-image:url(../images/btn_play.gif);
+}
+
+
+

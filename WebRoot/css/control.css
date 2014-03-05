@@ -1,0 +1,501 @@
+.c_special {
+	
+}
+.c_special * {
+	
+}
+.c_gra {
+	COLOR: #666666
+}
+.c_gra * {
+	COLOR: #666666
+}
+.c_black {
+	COLOR: #000000
+}
+.c_black * {
+	COLOR: #000000
+}
+.c_blue_d {
+	COLOR: #003399
+}
+.c_blue_d * {
+	COLOR: #003399
+}
+.c_white {
+	COLOR: #ffffff
+}
+.c_white * {
+	COLOR: #ffffff
+}
+.c_white2 {
+	COLOR: #ffffff
+}
+.c_org {
+	COLOR: #ff6400
+}
+.c_org * {
+	COLOR: #ff6400
+}
+.c_service {
+	COLOR: #0066ff
+}
+.c_service * {
+	COLOR: #0066ff
+}
+.c_red {
+	COLOR: #f40700; FONT-SIZE: 14px
+}
+.c_red * {
+	COLOR: #f40700; FONT-SIZE: 14px
+}
+A.c_red {
+	COLOR: #f40700
+}
+.c_gra2 {
+	COLOR: #b6b6b6
+}
+.c_gra2 * {
+	COLOR: #b6b6b6
+}
+.bg_blue {
+	BACKGROUND-COLOR: #ecf3ff
+}
+.f_10 {
+	FONT-SIZE: 10px
+}
+.f_10 * {
+	FONT-SIZE: 10px
+}
+.f_12 {
+	FONT-SIZE: 12px
+}
+.f_12 * {
+	FONT-SIZE: 12px
+}
+.f_14 {
+	FONT-SIZE: 14px
+}
+.f_14 * {
+	FONT-SIZE: 14px
+}
+.f_16 {
+	FONT-SIZE: 16px
+}
+.f_16 * {
+	FONT-SIZE: 16px
+}
+.f_18 {
+	FONT-SIZE: 18px
+}
+.f_18 * {
+	FONT-SIZE: 18px
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.bold * {
+	FONT-WEIGHT: bold
+}
+.nobold {
+	FONT-WEIGHT: normal
+}
+.nobold * {
+	FONT-WEIGHT: normal
+}
+.t_i_100 {
+	TEXT-INDENT: 100px
+}
+.t_i_24 {
+	TEXT-INDENT: 24px
+}
+.line_20 {
+	LINE-HEIGHT: 20px
+}
+.line_20 * {
+	LINE-HEIGHT: 20px
+}
+.line_22 {
+	LINE-HEIGHT: 22px
+}
+.line_22 * {
+	LINE-HEIGHT: 22px
+}
+.line_24 {
+	LINE-HEIGHT: 24px
+}
+.line_24 * {
+	LINE-HEIGHT: 24px
+}
+.line_35 {
+	LINE-HEIGHT: 35px
+}
+.line_35 * {
+	LINE-HEIGHT: 35px
+}
+.img_1_b {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 2px
+}
+.img_3_1 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; MARGIN: 5px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+#TVcenter {
+	MARGIN-TOP: 5px; PADDING-LEFT: 10px; WIDTH: 810px; FLOAT: right
+}
+#TVcenter H2 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 27px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 1px; FONT-SIZE: 14px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+#TVcenter H1 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 27px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+.funcLInk {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+.funcLInk LI {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 5px
+}
+.funcLInk .now {
+	BACKGROUND: url(../images/icon_now.gif) #ffff66 no-repeat 0px 50%
+}
+.funcLInk A {
+	COLOR: black; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.funcLInk A:visited {
+	COLOR: black; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.funcLInk A:hover {
+	BACKGROUND: #ffff66
+}
+.helpLink {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-LEFT: 5px; CLEAR: both; PADDING-TOP: 0px
+}
+.helpLink LI {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 1px; WIDTH: 130px; WHITE-SPACE: nowrap; OVERFLOW: hidden
+}
+.helpLink LI A {
+	COLOR: black; TEXT-DECORATION: none
+}
+.helpLink LI A:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+.box3 {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #00ffff; WIDTH: 200px; FLOAT: left; HEIGHT: 200px; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.table {
+	
+}
+.row DIV {
+	BORDER-LEFT: #c1bbab 1px solid; WIDTH: 240px; DISPLAY: inline; BORDER-TOP: #c1bbab 1px solid
+}
+.header DIV {
+	TEXT-ALIGN: center; BORDER-LEFT: #c1bbab 1px solid; BACKGROUND-COLOR: #e0ddd5; WIDTH: 240px; DISPLAY: inline; BORDER-TOP: #c1bbab 1px solid
+}
+.lastcell {
+	BORDER-RIGHT: #c1bbab 1px solid
+}
+.header {
+	COLOR: navy; FONT-WEIGHT: bold
+}
+.grid_rw1clr DIV {
+	BACKGROUND-COLOR: #ffffff
+}
+.grid_rw2clr DIV {
+	BACKGROUND-COLOR: #f9f8f6
+}
+.set_title {
+	BORDER-BOTTOM: #cccccc 1px solid; WIDTH: 700px; CLEAR: both; FONT-WEIGHT: bold; PADDING-TOP: 10px
+}
+.label_input {
+	MARGIN-TOP: 2px; WIDTH: 770px; HEIGHT: 25px; CLEAR: left
+}
+.mylabel {
+	TEXT-ALIGN: right; WIDTH: 135px; PADDING-RIGHT: 10px; FLOAT: left
+}
+.inputbox {
+	WIDTH: 200px; FLOAT: left
+}
+.inputbox1 {
+	WIDTH: 400px; FLOAT: left
+}
+.inputbox_file {
+	WIDTH: 250px; FLOAT: left
+}
+.render_option {
+	WIDTH: 170px; FLOAT: left; HEIGHT: 25px
+}
+.render_option2 {
+	WIDTH: 340px; FLOAT: left; HEIGHT: 25px
+}
+.tipbox_file {
+	WIDTH: 200px; FLOAT: left
+}
+.tipbox {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #0033cc; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.forphoton {
+	WIDTH: 70px; FLOAT: left
+}
+.photonTip {
+	WIDTH: 550px; FLOAT: left
+}
+.ftip {
+	WIDTH: 55px; FLOAT: left
+}
+.ftipp {
+	WIDTH: 630px; FLOAT: left
+}
+.submit_button {
+	TEXT-ALIGN: right; WIDTH: 700px
+}
+.addtask_submit {
+	TEXT-ALIGN: center; WIDTH: 700px
+}
+.file_explorer {
+	WIDTH: 780px; CLEAR: left; OVERFLOW: auto
+}
+.unpack_msg {
+	WIDTH: 680px; HEIGHT: 250px; CLEAR: left; OVERFLOW: auto
+}
+.btable {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 10px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.btable TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 10px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.stable {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 10px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.stable TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 10px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.errormsg {
+	TEXT-ALIGN: right; COLOR: red
+}
+.errormsg SPAN {
+	COLOR: #ff0000
+}
+.mustin {
+	COLOR: #ff0000
+}
+.filetable {
+	BORDER-BOTTOM: #cccccc 0px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 0px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 0px solid
+}
+.filetable CAPTION {
+	FONT-SIZE: 14px; FONT-WEIGHT: bolder
+}
+.filetable THEAD TD {
+	BACKGROUND-COLOR: #cccccc; FONT-WEIGHT: bold
+}
+.filetable TD {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 0px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #bbbbbb 0px solid; BORDER-RIGHT: #bbbbbb 1px solid; PADDING-TOP: 1px
+}
+.filetable A {
+	COLOR: #35ca02; TEXT-DECORATION: none
+}
+.listtab {
+	BORDER-BOTTOM: #cccccc 0px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 0px; BORDER-TOP: #cccccc 1px solid; MARGIN-RIGHT: 0px; BORDER-RIGHT: #cccccc 0px solid
+}
+.listtab CAPTION {
+	FONT-SIZE: 14px; FONT-WEIGHT: bolder
+}
+.listtab THEAD TD {
+	BACKGROUND-COLOR: #cccccc; FONT-WEIGHT: bold
+}
+.listtab TD {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 0px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #bbbbbb 0px solid; BORDER-RIGHT: #bbbbbb 1px solid; PADDING-TOP: 1px
+}
+.listtab TBODY TR {
+	BACKGROUND: #ffffff
+}
+.listtab A {
+	COLOR: #35ca02
+}
+.listtab_task {
+	BORDER-BOTTOM: #cccccc 0px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 0px; BORDER-TOP: #cccccc 1px solid; MARGIN-RIGHT: 0px; BORDER-RIGHT: #cccccc 0px solid
+}
+.listtab_task CAPTION {
+	FONT-SIZE: 14px; FONT-WEIGHT: bolder
+}
+.listtab_task THEAD TD {
+	BACKGROUND-COLOR: #eeeeee; FONT-WEIGHT: normal
+}
+.listtab_task TD {
+	BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 0px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #bbbbbb 0px solid; BORDER-RIGHT: #bbbbbb 1px solid; PADDING-TOP: 1px
+}
+.listtab_task TBODY TR {
+	BACKGROUND: #ffffff
+}
+.listtab_task A {
+	COLOR: #35ca02
+}
+.filediv {
+	MARGIN-TOP: 1px; WIDTH: 750px; CLEAR: left; OVERFLOW: auto
+}
+.filename {
+	TEXT-ALIGN: right; WIDTH: 135px; PADDING-RIGHT: 10px; FLOAT: left
+}
+.filesize {
+	WIDTH: 100px; FLOAT: left
+}
+.filemodify {
+	WIDTH: 420px; FLOAT: left
+}
+.close {
+	WIDTH: 680px
+}
+.closediv1 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 660px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.closediv2 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 19px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.pardiv {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 600px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.errordiv {
+	TEXT-ALIGN: left; WIDTH: 700px; HEIGHT: 15px; COLOR: #ff0000; PADDING-TOP: 10px
+}
+.engindiv {
+	TEXT-ALIGN: left; WIDTH: 700px; HEIGHT: 15px; PADDING-TOP: 10px
+}
+.engindiv A {
+	HEIGHT: 100%; COLOR: black; MARGIN-LEFT: 20px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.engindiv A:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+.engindiv A:hover {
+	BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+.engindiv .now {
+	FONT-WEIGHT: normal
+}
+.aout {
+	TEXT-DECORATION: none
+}
+.aover {
+	BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+.afterc {
+	COLOR: #ff0000; FONT-WEIGHT: normal
+}
+.mymy {
+	WIDTH: 55px; FLOAT: left
+}
+.mytext {
+	TEXT-ALIGN: right; WIDTH: 80px; PADDING-RIGHT: 10px; FLOAT: left
+}
+.myframe {
+	TEXT-ALIGN: left; WIDTH: 100px; PADDING-RIGHT: 10px; FLOAT: left
+}
+.onloading {
+	BACKGROUND: url(../images/loading.gif) no-repeat 200px 80px
+}
+.reading {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BACKGROUND: url(../images/loading.gif) no-repeat 200px 500px; HEIGHT: 400px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.btn1 {
+	WIDTH: 88px; BACKGROUND: url(../images/btn_back1.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.btn3 {
+	WIDTH: 68px; BACKGROUND: url(../images/btn_back3.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.btndown {
+	WIDTH: 68px; BACKGROUND: url(../images/btn_down.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.btn4 {
+	WIDTH: 132px; BACKGROUND: url(../images/btn_back4.png) no-repeat 0px 1px; FLOAT: left; HEIGHT: 25px; CURSOR: pointer
+}
+.btn4_black {
+	WIDTH: 132px; BACKGROUND: url(../images/btn_back4-td.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 25px
+}
+.btn_downtext3 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; LETTER-SPACING: 1px; HEIGHT: 18px; COLOR: #ffffff; MARGIN-LEFT: 18px; FONT-SIZE: 12px
+}
+.btn_text3 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; LETTER-SPACING: 1px; HEIGHT: 18px; COLOR: #ffffff; MARGIN-LEFT: 25px; FONT-SIZE: 12px; PADDING-TOP: 3px
+}
+.btn_return {
+	WIDTH: 68px; BACKGROUND: url(../images/btn_return.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.btn_return2 {
+	WIDTH: 68px; BACKGROUND: url(../images/btn_return2.gif) no-repeat 0px 1px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.btn_return_text2 {
+	LINE-HEIGHT: 18px; MARGIN-TOP: 1px; WIDTH: 58px; LETTER-SPACING: 1px; HEIGHT: 18px; COLOR: #ffffff; MARGIN-LEFT: 20px; FONT-SIZE: 12px
+}
+.btn_return_text3 {
+	LINE-HEIGHT: 18px; WIDTH: 58px; LETTER-SPACING: 1px; HEIGHT: 18px; COLOR: #ffffff; MARGIN-LEFT: 10px; FONT-SIZE: 12px
+}
+.guide1 {
+	BACKGROUND: url(../images/btn_back3.gif) no-repeat 0px 1px
+}
+.mult1 {
+	WIDTH: 160px; FLOAT: left
+}
+.mult2 {
+	WIDTH: 200px
+}
+.view {
+	BORDER-BOTTOM: #cccccc 1px solid; POSITION: relative; TEXT-ALIGN: center; BORDER-LEFT: #cccccc 1px solid; WIDTH: 250px; HEIGHT: 200px; BORDER-TOP: #cccccc 1px solid; CURSOR: hand; BORDER-RIGHT: #cccccc 1px solid
+}
+.view DIV {
+	POSITION: absolute; TOP: 50%; LEFT: 0px
+}
+.view DIV DIV {
+	POSITION: relative; TOP: -50%; LEFT: 0px
+}
+.help A {
+	COLOR: #009900; TEXT-DECORATION: none
+}
+.helpa {
+	COLOR: #009900; TEXT-DECORATION: none
+}
+.content {
+	WIDTH: 720px; FONT-FAMILY: "����"; FONT-SIZE: 14px; WORD-BREAK: break-all
+}
+.blo {
+	COLOR: #000000
+}
+.hhtitle {
+	FONT-FAMILY: "����"; FONT-SIZE: 25px; PADDING-TOP: 10px
+}
+.htitle {
+	FONT-FAMILY: "����"; FONT-SIZE: 20px
+}
+.htitle A {
+	FONT-FAMILY: "����"; COLOR: #000000; FONT-SIZE: 20px; CURSOR: default; TEXT-DECORATION: none
+}
+.hline {
+	FONT-FAMILY: "����"; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.hline1 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 20px; WIDTH: 730px; BORDER-TOP: #cccccc 1px solid; PADDING-TOP: 10px
+}
+.hline1 A {
+	FONT-FAMILY: "����"; COLOR: #009900; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.himg {
+	TEXT-ALIGN: left; FONT-WEIGHT: bold
+}
+.maya_set_title {
+	WIDTH: 700px; FONT-WEIGHT: bold; PADDING-TOP: 10px
+}
+.maya_set_title1 {
+	WIDTH: 60px; FLOAT: left; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.maya_set_title2 {
+	WIDTH: 640px; FLOAT: left
+}
+.maya_label {
+	TEXT-ALIGN: right; WIDTH: 168px; PADDING-RIGHT: 10px; FLOAT: left
+}
+.maya_tipbox {
+	WIDTH: 150px; FLOAT: left
+}
+.operate A {
+	TEXT-DECORATION: none
+}
+.operate A:hover {
+	TEXT-DECORATION: underline
+}

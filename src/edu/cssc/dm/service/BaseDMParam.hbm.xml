@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="edu.cssc.dm.service">
+	<class name="BaseDMParam" dynamic-insert="true" dynamic-update="true">
+		<id name="paramID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="hdfsDirPrefix"/>
+		<property name="localDirPrefix" />
+		<property name="input_file" />
+		<property name="output_result" />
+		
+		<one-to-one name="DMTask" class="DMTask" property-ref="param"/>   
+		<union-subclass name="ParamFpgrowth" table="ParamFpgrowth">
+			<property name="fpgrowth_minSupport" />
+			<property name="fpgrowth_maxHeapSize" />
+			<property name="fpgrowth_numGroups" />
+			<property name="fpgrowth_splitterPattern" />
+			<property name="fpgrowth_numTreeCacheEntries" />
+			<property name="fpgrowth_method" />
+			<property name="fpgrowth_encoding" />
+			<property name="fpgrowth_useFP2" />
+			<property name="fpgrowth_seqFile" />
+		</union-subclass>
+		<union-subclass name="ParamItembased" table="ParamItembased">
+			<property name="itembased_usersFile" />
+			<property name="itembased_itemsFile" />
+			<property name="itembased_filterFile" />
+			<property name="itembased_similarityClassname" />
+			<property name="itembased_booleanData" />
+			<property name="itembased_numRecommendations" />
+			<property name="itembased_maxPrefsPerUser" />
+			<property name="itembased_maxSimilaritiesPerItem" />
+			<property name="itembased_minPrefsPerUser" />
+			<property name="itembased_maxPrefsPerUserInItemSimilarity" />
+			<property name="itembased_threshold" />
+		</union-subclass>
+		<union-subclass name="ParamKmeans" table="ParamKmeans">
+			<property name="kmeans_vectorClassName" />
+			<property name="kmeans_clustersIn" />
+			<property name="kmeans_distanceMeasure" />
+			<property name="kmeans_k" />
+			<property name="kmeans_convergenceDelta" />
+			<property name="kmeans_maxIterations" />
+			<property name="kmeans_overwrite" />
+			<property name="kmeans_runClustering" />
+			<property name="kmeans_runSequential" />
+			<property name="kmeans_clusterClientOutputFormat" />
+		</union-subclass>
+		
+		
+	</class>
+</hibernate-mapping>
